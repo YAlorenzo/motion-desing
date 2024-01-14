@@ -183,13 +183,13 @@
 			const newY = (event.clientY - boundBox.top)/magneto.offsetHeight - 0.5 
 
 			gsap.to(magneto, {
-				durection: 1,
+				duration: 1,
 				x: newX * magnetoStrength,
 				y: newY * magnetoStrength,
 				ease: Power4.easeOut
 			})
 			gsap.to(magnetoText, {
-				durection: 1,
+				duration: 1,
 				x: newX * magnetoTextStrength,
 				y: newY * magnetoTextStrength,
 				ease: Power4.easeOut
@@ -202,19 +202,18 @@
 		const resetMagneto = (event) => {
 
 			gsap.to(magneto, {
-				durection: 1,
+				duration: 1,
 				x: 0,
 				y: 0,
 				ease: Elastic.easeOut
 			})
 
 			gsap.to(magnetoText, {
-				durection: 1,
+				duration: 1,
 				x: 0,
 				y: 0,
 				ease: Elastic.easeOut
 			})
-
 		}
 
 		magneto.addEventListener('mousemove', activateMagneto);
