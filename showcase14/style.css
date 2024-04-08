@@ -1,0 +1,141 @@
+:root {
+			--default-shadow: 4px 4px 2px rgba(0, 0, 0, 0.16);
+			--orange: #F2762E;
+			--yellow: #F2B705;
+			--red: #BF0404;
+			--off-white: #E5C6B4;
+		}
+
+		html {
+			font-size: 16px;
+			font-family: 'Luckiest Guy', cursive;
+			line-height: 1.5;
+		}
+
+		h1,
+		h2,
+		h3 {
+			margin: 0;
+		}
+
+		h1 {
+			font-size: 3.1875rem;
+			color: var(--yellow);
+			-webkit-text-stroke: 1px var(--orange);
+		}
+
+		h2 {
+			font-size: 2.375rem;
+			color: var(--orange);
+			-webkit-text-stroke: 1px var(--red);
+			transition: all .2s ease-in-out;
+		}
+
+		h3,
+		button {
+			font-size: 1.3125rem;
+			color: #FFF;
+			letter-spacing: 0.84px;
+			-webkit-text-stroke: 1px var(--red);
+		}
+
+		body {
+			background: url(../images/showcase14/svg-pattern-topography.svg), linear-gradient(45deg, #0468BF 0%, #3299F3 100%);
+			min-height: 100vh;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+			padding-bottom: 4rem;
+		}
+
+		hgroup {
+			background-color: #022543;
+			box-shadow: var(--default-shadow);
+			border-radius: 0 0 4rem 4rem;
+			text-align: center;
+			padding: 3rem 6rem;
+		}
+
+		button {
+			padding: 1.45rem 2.5rem 1rem;
+			border: 1px solid var(--yellow);
+			background-color: var(--orange);
+			border-radius: 1rem;
+			display: flex;
+			gap: 1rem;
+			justify-content: center;
+			box-shadow: var(--default-shadow);
+			transition: all .2s ease-in-out;
+			cursor: pointer;
+		}
+
+		button svg {
+			fill: white;
+			stroke: var(--red);
+			transition: all .2s ease-in-out;
+		}
+
+		button[disabled] {
+			background-color: var(--off-white);
+			border-color: var(--off-white);
+			color: rgba(255, 255, 255, .32);
+			-webkit-text-stroke: 1px rgba(191, 4, 4, 0.32);
+			cursor: not-allowed;
+		}
+
+		button:not([disabled]):hover {
+			gap: 2rem;
+		}
+
+		button[disabled] svg {
+			stroke: rgba(191, 4, 4, 0.32);
+			fill: var(--off-white);
+		}
+
+		.card-container {
+			display: flex;
+			gap: 2em;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.card {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			background-color: white;
+			border-radius: 2rem;
+			padding: 2.5rem 1.5rem 0;
+			box-shadow: var(--default-shadow);
+			cursor: pointer;
+			transition: all .2s ease-in-out;
+			border: 1px solid transparent;
+		}
+
+		.card:hover {
+			transform: scale(1.1);
+		}
+
+		.card figure {
+			transition: transform .2s ease-in-out;
+			margin: 0;
+		}
+
+		.card.selected {
+			background: var(--orange);
+			border-color: var(--yellow);
+			transform: scale(1.1);
+		}
+
+		.card.selected h2 {
+			color: white;
+		}
+
+		/* Air */
+		/* You can download the walking sequences you saw in the video using the links below */
+		/* - https://elements.envato.com/animation-of-girl-walking-S4WXEK8 */
+		/* - https://elements.envato.com/animation-of-boy-walking-7H3QTE3 */
+		/* - https://elements.envato.com/animation-of-zombie-walking-9QDTDMW */
+		/* - https://elements.envato.com/animation-of-skeleton-walking-SK7SQUJ */

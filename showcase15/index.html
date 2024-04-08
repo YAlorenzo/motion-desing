@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise #15 || Animated logo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
+	<link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div class="container">
+      <svg width="275" height="182" viewBox="0 0 275 182" fill="none">
+        <rect
+          id="middle"
+          x="95.25"
+          y="10"
+          width="84.5"
+          height="161.5"
+          rx="42.25"
+          stroke="black"
+        />
+        <path
+          id="right"
+          d="M179.75 90.75V52.25C179.75 28.916 198.666 10 222 10V10C245.334 10 264.25 28.916 264.25 52.25V90.75"
+          stroke="black"
+        />
+        <path
+          id="left"
+          d="M10.75 90.5V129C10.75 152.334 29.666 171.25 53 171.25V171.25C76.334 171.25 95.25 152.334 95.25 129V90.5"
+          stroke="black"
+        />
+      </svg>
+    </div>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+	<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/DrawSVGPlugin3.min.js"></script>
+	<script src="./index.js"></script>
+  </body>
+</html>
